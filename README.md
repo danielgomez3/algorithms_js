@@ -20,7 +20,7 @@
 
 
 
-# Funtional JavaScript Algorithms
+# Algorithms in Functional JavaScript
 
 For the Functional layman (:neckbeard:).
 
