@@ -1,22 +1,26 @@
+const isTriple = arr => arr[0] === arr[1] && arr[0] === arr[2];
+const isPair = arr => arr[0] === arr[1];
+const twoPairs = x => (y = false) => x !== y; // XOR (strict ineq.)
+
 const complete = (tiles) => {
-  const checkHand = (arr, hasPair) =>
-    arr.length === 0
-      ? hasPair // Return the value indicating if there is a pair or not
-      : isPair(arr, hasPair);
+  const checkHand = (hand, func) =>
+    hand.length === 0
+      ? typeof func === 'function'
+        ? func(false) // Invoke func with false if it's a function
+        : func // Return the value if it's not a function
+      : isTriple(hand)
+      ? checkHand(hand.slice(3), func)
+      : isPair(hand)
+      ? (() => {
+          const onePair = func(true);
+          return checkHand(hand.slice(2), onePair);
+        })()
+      : false; // matchless!
 
-  const isPair = (arr, hasPair) =>
-    arr[0] === arr[1] && arr[1] !== arr[2]
-      ? checkHand(arr.slice(2), true) // Set hasPair to true if a pair is found
-      : isTriple(arr, hasPair);
-
-  const isTriple = (arr, hasPair) =>
-    arr[0] === arr[1] && arr[1] === arr[2]
-      ? checkHand(arr.slice(3), hasPair) // Keep hasPair as is for triples
-      : false; // It's neither a pair nor a triple, return false
-
-  const sortedTiles = tiles.split('').sort();
-  return checkHand(sortedTiles, false); // Start with hasPair set to false
+  return checkHand([...tiles.split('').sort()], twoPairs(false)); // Pass false directly to twoPairs
 };
+
+// Rest of the code...
 
 const tiles_1 = "88844";
 const tiles_2 = "99";
@@ -35,6 +39,7 @@ const tiles_14 = "6996999";
 const tiles_15 = "03799449";
 const tiles_16 = "64444333355556";
 const tiles_17 = "7";
+
 console.log(complete(tiles_1));
 console.log(complete(tiles_2));
 console.log(complete(tiles_3));

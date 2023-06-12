@@ -1,6 +1,6 @@
 console.time('test')
 const mergeSort = (arr) => 
-    arr.length <= 1 
+    arrlength <= 1 
     ? arr 
     : (([left,right]) => {
         const merge = (a,b) =>
