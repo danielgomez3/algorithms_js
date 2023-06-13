@@ -1,9 +1,8 @@
-<!---
 <p align="center">
   <a href="./assets/seahorse.png">
     <img alt="Logo" src="./assets/seahorse.png" height="240" />
   </a>
-  <p align="center">Make your Vim/Neovim as smart as VS Code</p>
+  <p align="center">For the Functional layman (:neckbeard:s).</p>
   <p align="center">
     <a href=""><img alt="Software License" src=""></a>
     <a href=""><img alt="Actions" src=""></a>
@@ -13,7 +12,6 @@
   </p>
 </p>
 
--->
 
 ---
 
@@ -22,7 +20,7 @@
 
 # Algorithms in Functional JavaScript
 
-For the Functional layman (:neckbeard:).
+
 
 ## Why?
 
