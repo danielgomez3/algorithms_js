@@ -35,6 +35,19 @@ These algorithms are good for you because they will teach you a couple things:
 - Using recent ECMAScript standards and styles, and *more importantly* language-agnostic concepts.
 - Doing things **Functionally** (using the Functional-Programming Paradigm) when we can, and still being realistic by interacting with both Objects and Classes (interviewers will still expect you to know how to code Object-Oriented). 
 
+
+## Glossary
+
+- Technical Interview questions:
+
+[Majong 'tiles' variant](./src_algorithmsjs/majongwinhand_solut_fp.js)
+
+- Sorts and Searches:
+
+[Merge Sort](./src_algorithmsjs/mergesort_solut_fp.js)  
+
+[Binary Search](./src_algorithmsjs/binarysearch_solut_fp.js)  
+
 ### How
 
 - Done using command-line NodeJS runtime environment. Download NodeJS. To run:
@@ -45,5 +58,3 @@ node <filename>.js
 
 - Here are the included coding problems and questions that come with a walkthrough, along with comparable lines of code *you would expect* from mainstream websites that are more lines of code, and slower performance. Links of websites included:
 
-[Merge Sort](./src_algorithmsjs/mergesort_solut_fp.js)
-[Binary Search](./src_algorithmsjs/binarysearch_solut_fp.js)
