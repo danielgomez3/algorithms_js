@@ -4,11 +4,13 @@
   </a>
   <p align="center">For the Functional layman :neckbeard:.</p>
   <p align="center">
-    <a href=""><img alt="Software License" src=""></a>
     <a href="https://www.linkedin.com/in/daniel-gomez-func/"><img alt="Follow me on LinkedIn" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a>
-      <a href=""><img alt="Codecov Coverage Status" src=""></a>
-    <a href=""><img alt="Doc" src=""></a>
-    <a href=""><img alt="Gitter" src=""></a>
+  <a href="./LICENSE.md">
+  <img alt="BSD License" src="https://img.shields.io/badge/License-BSD%203--Clause-yellow">
+</a>
+      <a href="https://nodejs.org/">
+  <img alt="Node.js Version" src="https://img.shields.io/badge/Node.js-v18.16.0-brightgreen">
+</a>
   </p>
 </p>
 
