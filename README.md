@@ -5,7 +5,7 @@
   <p align="center">For the Functional layman :neckbeard:.</p>
   <p align="center">
     <a href=""><img alt="Software License" src=""></a>
-    <a href=""><img alt="Actions" src=""></a>
+    <a href="https://www.linkedin.com/in/daniel-gomez-func/"><img alt="Follow me on LinkedIn" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a>
       <a href=""><img alt="Codecov Coverage Status" src=""></a>
     <a href=""><img alt="Doc" src=""></a>
     <a href=""><img alt="Gitter" src=""></a>
@@ -48,7 +48,7 @@ These algorithms are good for you because they will teach you a couple things:
 
 [Binary Search](./src_algorithmsjs/binarysearch_solut_fp.js)  
 
-### How
+### Get Started
 
 - Done using command-line NodeJS runtime environment. Download NodeJS. To run:
 
