@@ -34,9 +34,14 @@ For the Functional layman (:neckbeard:).
 These algorithms are good for you because they will teach you a couple things:
 - Using Recursion
 - Writing **good code**, or in other words, minimally dependent, robust, and reusable code.
-- Using recent ECMAScript JavaScript concepts, and *more importantly* language-agnostic concepts.
+- Using recent ECMAScript concepts, and *more importantly* language-agnostic concepts.
 - Doing things **Functionally** (using the Functional-Programming Paradigm) when we can, and still being realistic by interacting with both Objects and Classes (interviewers will still expect you to know how to code O-O). 
 
 ### How
 
 - Done using command-line NodeJS runtime environment. Download this to run.
+
+
+```
+node <filename>.js
+```
