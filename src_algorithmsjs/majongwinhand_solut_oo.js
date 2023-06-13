@@ -1,36 +1,22 @@
 function complete(tiles) {
-  // Count the frequency of each tile
-  const count = {};
-  for (const tile of tiles) {
-    count[tile] = (count[tile] || 0) + 1;
-  }
-  
-  // Count the number of pairs and triples
-  let pairs = 0;
-  let triples = 0;
-  
-  for (const tile in count) {
-    const frequency = count[tile];
-    
-    if (frequency === 2) {
-      // Found a pair
-      pairs++;
-    }
-    
-    if (frequency === 3) {
-      // Found a triple
-      triples++;
-    }
-  }
-  
-  // Check if the hand is complete
-  if (pairs === 1 && (pairs + triples) * 2 === tiles.length) {
-    return true;
-  }
-  
-  return false;
-}
+    let counts = new Map();
 
+    // Count the occurrences of each tile.
+    for(let i=0; i < tiles.length; i++) {
+        let tile = tiles[i];
+        counts.set(tile, (counts.get(tile) || 0) + 1);
+    }
+
+    let pairs = 0;
+    for(let count of counts.values()) {
+        if(count === 2) pairs++;  // It's a pair.
+        else if(count % 3 === 0) continue; // It's a triple or multiple triples.
+        else if(count % 3 === 2) pairs++; // It's a pair and a triple or multiple triples.
+        else return false;  // It's a lone number or doesn't meet any condition.
+    }
+
+    return pairs === 1;
+}
 
 const tiles_1 = "88844";
 const tiles_2 = "99";

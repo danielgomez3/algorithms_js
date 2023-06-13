@@ -1,26 +1,19 @@
-const isTriple = arr => arr[0] === arr[1] && arr[0] === arr[2];
-const isPair = arr => arr[0] === arr[1];
-const twoPairs = x => y => (typeof y === 'function' ? y(x) : x !== y);
-
 const complete = (tiles) => {
-  const checkHand = (hand, func) =>
-    hand.length === 0
-      ? (() => {
-        return twoPairs()
-        })
-      : isTriple(hand)
-      ? checkHand(hand.slice(3), func)
-      : isPair(hand)
-      ? (() => {
-          const onePair = func(true);
-          checkHand(hand.slice(2), onePair);
-        })()
-      : false; // matchless!
+    const sortedTiles = tiles.split('').sort().join('');
+    const isPair = (hand) => hand[0] === hand[1];
+    const isTriple = (hand) => hand[0] === hand[1] && hand[0] === hand[2];
 
-  return checkHand([...tiles.split('').sort()], twoPairs(false)); // Pass false directly to twoPairs
+    const evaluateHand = (hand, pairCount = 0) =>
+        hand.length === 0
+            ? pairCount === 1
+            : isTriple(hand)
+            ? evaluateHand(hand.substring(3), pairCount)
+            : isPair(hand)
+            ? evaluateHand(hand.substring(2), pairCount + 1)
+            : false;
+
+    return evaluateHand(sortedTiles);
 };
-
-// Rest of the code...
 
 const tiles_1 = "88844";
 const tiles_2 = "99";
