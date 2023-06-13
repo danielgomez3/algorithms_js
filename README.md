@@ -1,7 +1,7 @@
 <!---
 <p align="center">
-  <a href="">
-    <img alt="Logo" src="" height="240" />
+  <a href="./assets/seahorse.png">
+    <img alt="Logo" src="./assets/seahorse.png" height="240" />
   </a>
   <p align="center">Make your Vim/Neovim as smart as VS Code</p>
   <p align="center">
