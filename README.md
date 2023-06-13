@@ -31,7 +31,7 @@
 
 ## What to Expect
 
-These algorithms are good for you because they will teach you a couple things:
+These written algorithms are good for you. They will teach you a couple of things:
 - Using Recursion
 - Writing **good code**, or in other words, code that is minimally dependent, robust, and reusable. We hate writing code for its sake.
 - Using recent ECMAScript standards and styles, and *more importantly* language-agnostic concepts.
@@ -48,7 +48,13 @@ These algorithms are good for you because they will teach you a couple things:
 
 [Merge Sort](./src_algorithmsjs/mergesort_solut_fp.js)  
 
+[Quick-Sort](./src_algorithmsjs/quicksort_solut_fp.js)  
+
 [Binary Search](./src_algorithmsjs/binarysearch_solut_fp.js)  
+
+[Depth-first Search](./src_algorithmsjs/depthfirst_solut_fp.js)  
+
+[Breadth-first Search](./src_algorithmsjs/breadthfirst_solut_fp.js)  
 
 ### Get Started
 
