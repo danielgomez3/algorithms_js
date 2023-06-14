@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="./assets/seahorse.png">
+  <a href="./assets/sh-transp.png">
     <img alt="Logo" src="./assets/seahorse.png" height="240" />
   </a>
   <p align="center">For the Functional layman :neckbeard:.</p>
