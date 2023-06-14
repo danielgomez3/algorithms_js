@@ -26,8 +26,8 @@
 
 ## Why?
 
-- :whale: This is for those who want to familiarize and learn all renowned Computer Science algorithms, including Merge-Sort, and the searches.
-- :page_with_curl: This *also* includes famous coding questions that I've run in to during the de-facto **Karat Coding interview**, altered as to avoid copyright.
+- :whale: This is for those who want to familiarize and learn renowned Computer Science algorithms, including Merge-Sort, and the searches.
+- :page_with_curl: This *also* includes some famous coding questions, and ones that I've run in to during the de-facto **Karat Coding interview**, altered as to avoid copyright.
 
 ## What to Expect
 
@@ -56,7 +56,7 @@ These written algorithms are good for you. They will teach you a couple of thing
 
 [Breadth-first Search](./src_algorithmsjs/breadthfirst_solut_fp.js)  
 
-### Get Started
+## Get Started
 
 - Done using command-line NodeJS runtime environment. Download NodeJS. To run:
 

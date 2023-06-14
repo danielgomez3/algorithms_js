@@ -1,4 +1,3 @@
-// Define a class to represent a node in the graph
 class Node {
   constructor(value, neighbors = []) {
     this.value = value;
@@ -42,39 +41,3 @@ const breadthFirstSearch = (startNode, targetValue) => {
   return traverse([startNode]);
 };
 
-// Function to create the graph and return the starting node
-const createGraph = () => {
-  const nodeA = new Node('A');
-  const nodeB = new Node('B');
-  const nodeC = new Node('C');
-  const nodeD = new Node('D');
-  const nodeE = new Node('E');
-  const nodeF = new Node('F');
-  const nodeG = new Node('G');
-
-
-  // Set the neighbor relationships for each node
-  nodeA.neighbors = [nodeB, nodeC];
-  nodeB.neighbors = [nodeA, nodeD];
-  nodeC.neighbors = [nodeF];
-  nodeD.neighbors = [nodeG];
-
-
-  return nodeA; // Return the starting node of the graph
-};
-
-// Create the graph by calling the createGraph function
-const startNode = createGraph();
-
-// Choose the target value to search for
-const targetValue = 'D';
-
-// Run the breadth-first search algorithm and store the result
-const result = breadthFirstSearch(startNode, targetValue);
-
-// Print the result based on whether the target value was found or not
-if (result) {
-  console.log(`The target value '${targetValue}' was found using breadth-first search.`);
-} else {
-  console.log(`The target value '${targetValue}' was not found.`);
-}
