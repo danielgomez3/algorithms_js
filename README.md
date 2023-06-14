@@ -1,6 +1,6 @@
 <p align="center">
   <a href="./assets/sh-transp.png">
-    <img alt="Logo" src="./assets/seahorse.png" height="240" />
+    <img alt="Logo" src="./assets/sh-transp.png" height="240" />
   </a>
   <p align="center">For the Functional layman :neckbeard:.</p>
   <p align="center">
